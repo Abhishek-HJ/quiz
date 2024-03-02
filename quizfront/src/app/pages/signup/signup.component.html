@@ -1,0 +1,97 @@
+<app-navbar></app-navbar>
+
+
+
+
+
+
+          
+            <section>
+                <div class="leaves">
+                    <div class="set">
+                        <div><img src="assets/images/leaf_01.png"></div>
+                        <div><img src="assets/images/leaf_02.png"></div>
+                        <div><img src="assets/images/leaf_03.png"></div>
+                        <div><img src="assets/images/leaf_04.png"></div>
+                        <div><img src="assets/images/leaf_01.png"></div>
+                        <div><img src="assets/images/leaf_02.png"></div>
+                        <div><img src="assets/images/leaf_03.png"></div>
+                        <div><img src="assets/images/leaf_04.png"></div>
+                    </div>
+                </div>
+                <img src="assets/images/bg.jpg" class="bg">
+                <img src="assets/images/girl.png" class="girl">
+                <img src="assets/images/trees.png" class="trees">
+                <div class="login">
+                    <h2>Register</h2>
+                    <form (ngSubmit)="formSubmit()">
+
+
+      
+                      <!--Username-->
+                        <mat-form-field class="fullWidth"  appearance="outline">
+                          <mat-label>userName</mat-label>
+                      
+                          <!--[()] used because 2 way binding--> <input [(ngModel)]="user.userName" 
+                          required
+                          name="userName"
+                          matInput placeholder="Enter Username">                
+                        </mat-form-field>
+                    
+                       <!--Password-->
+                      <mat-form-field class="fullWidth" appearance="outline">
+                      <mat-label>Password</mat-label>
+                      <input [(ngModel)]="user.password"
+                      type="password"
+                      required
+                      name="password"
+                       matInput placeholder="Enter Password">                
+                       </mat-form-field>
+                    
+                      <!--First name-->
+                      <mat-form-field class="fullWidth" appearance="outline">
+                      <mat-label>First name</mat-label>
+                       <input [(ngModel)]="user.firstName"
+                       name="firstName"
+                       required
+                        matInput placeholder="Enter First name">                
+                      </mat-form-field>
+                    
+                      <!--last name-->
+                      <mat-form-field class="fullWidth" appearance="outline">
+                      <mat-label>last name</mat-label>
+                      <input [(ngModel)]="user.lastName"
+                      name="lastName"
+                      required
+                      matInput placeholder="Enter last name">                
+                      </mat-form-field>
+                    
+                      <!--email-->
+                      <mat-form-field class="fullWidth" appearance="outline">
+                      <mat-label>email</mat-label>
+                       <input [(ngModel)]="user.email"
+                       name="email"
+                       required
+                       matInput placeholder="Enter email">                
+                      </mat-form-field>
+                    
+                      <!--phone-->
+                      <mat-form-field class="fullWidth" appearance="outline">
+                      <mat-label>phone</mat-label>
+                      <input [(ngModel)]="user.phone"
+                      name="phone"
+                      required
+                      matInput placeholder="Enter phone">                
+                      </mat-form-field>
+                    
+                      
+                      <button type="submit" mat-raised-button color= "primary">SignUp</button>
+                
+                      <div class="text">
+                        <h3>Already have an account? <a routerLink="/login">Login now</a></h3>
+                      </div>
+                    </form>
+                </div>
+                
+            </section>
+        
