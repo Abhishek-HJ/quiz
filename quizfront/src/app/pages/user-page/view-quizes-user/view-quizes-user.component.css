@@ -1,0 +1,29 @@
+.example-header-image {
+    background-image: url('../../../../assets/document.png');
+    background-size: cover;
+  }
+  
+  .a button {
+    margin-right: 10px;
+  }
+  .a button {
+    margin-right: 10px;
+  }
+  
+  .container {
+    margin-top: 20px;
+  }
+  
+  .mat-raised-button {
+    margin: 0 auto;
+    display: block;
+  }
+  .quiz-card {
+    margin-bottom: 20px;
+  }
+
+  .pink-button {
+    background-color: green;
+    color: #fff !important;
+  }
+  

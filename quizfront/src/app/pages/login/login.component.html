@@ -2,55 +2,49 @@
 
 
 
-    <body>
-      <section>
-          <div class="leaves">
-              <div class="set">
-                  <div><img src="assets/images/leaf_01.png"></div>
-                  <div><img src="assets/images/leaf_02.png"></div>
-                  <div><img src="assets/images/leaf_03.png"></div>
-                  <div><img src="assets/images/leaf_04.png"></div>
-                  <div><img src="assets/images/leaf_01.png"></div>
-                  <div><img src="assets/images/leaf_02.png"></div>
-                  <div><img src="assets/images/leaf_03.png"></div>
-                  <div><img src="assets/images/leaf_04.png"></div>
-              </div>
-          </div>
-          <img src="assets/images/bg.jpg" class="bg">
-          <img src="assets/images/girl.png" class="girl">
-          <img src="assets/images/trees.png" class="trees">
-          <div class="login">
-              <h2>Sign In</h2>
-              
-              <form class="login-form" (ngSubmit)="formSubmit()">
-                <!--Username-->
-                              <mat-form-field class="fullWidth"  appearance="outline">
-                                <mat-label>userName</mat-label>
-                            
-                                <!--[()] used because 2 way binding--> <input  [(ngModel)]="userName"
-                                required
-                                name="userName"
-                                matInput placeholder="Enter Username">                
-                              </mat-form-field>
-                  
-                <!--Password-->
-                        <mat-form-field class="fullWidth" appearance="outline">
-                        <mat-label>Password</mat-label>
-                        <input [(ngModel)]="password"
-                        type="password"
-                        required
-                        name="password"
-                        matInput placeholder="Enter Password">                
-                        </mat-form-field>
-        
-        
-        
-                       <div class="inputBox"> 
-                        <button type="submit" mat-raised-button color=""  id="btn">Login</button>
-                      </div>
-                  <p class="message">Not registered? <a routerLink="/signup">Create an account</a></p>
-                </form>
-          </div>
-          
-      </section>
-  </body>
+<body>
+  <section>
+    <div class="leaves">
+      <div class="set">
+        <div><img src="assets/images/leaf_01.png"></div>
+        <div><img src="assets/images/leaf_02.png"></div>
+        <div><img src="assets/images/leaf_03.png"></div>
+        <div><img src="assets/images/leaf_04.png"></div>
+        <div><img src="assets/images/leaf_01.png"></div>
+        <div><img src="assets/images/leaf_02.png"></div>
+        <div><img src="assets/images/leaf_03.png"></div>
+        <div><img src="assets/images/leaf_04.png"></div>
+      </div>
+    </div>
+    <img src="assets/images/bg.jpg" class="bg">
+    <img src="assets/images/girl.png" class="girl">
+    <img src="assets/images/trees.png" class="trees">
+    <div class="login">
+      <h2>Sign In</h2>
+
+      <form class="login-form" (ngSubmit)="formSubmit()">
+        <!--Username-->
+        <mat-form-field class="fullWidth" appearance="outline">
+          <mat-label>userName</mat-label>
+
+          <!--[()] used because 2 way binding--> <input [(ngModel)]="userName" required name="userName" matInput
+            placeholder="Enter Username">
+        </mat-form-field>
+
+        <!--Password-->
+        <mat-form-field class="fullWidth" appearance="outline">
+          <mat-label>Password</mat-label>
+          <input [(ngModel)]="password" type="password" required name="password" matInput placeholder="Enter Password">
+        </mat-form-field>
+
+
+
+        <div class="inputBox">
+          <button type="submit" mat-raised-button color="" id="btn">Login</button>
+        </div>
+        <p class="message">Not registered? <a routerLink="/signup">Create an account</a></p>
+      </form>
+    </div>
+
+  </section>
+</body>
